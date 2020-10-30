@@ -23,7 +23,7 @@ Ansible Playbook for setting up the ELK/EFK Stack and Filebeat client on remote 
 
 
 [![CI](https://travis-ci.org/sadsfae/ansible-elk.svg?branch=master)](https://travis-ci.org/sadsfae/ansible-elk)
-
+![ELK](/image/1.png?raw=true "How it works")
 ## What does it do?
    - Automated deployment of a full 6.x series ELK or EFK stack (Elasticsearch, Logstash, Kibana)
      * `5.6` and `2.4` ELK versions are maintained as branches and `master` branch will be 6.x currently.
@@ -90,7 +90,7 @@ ansible_system_user: centos
 ```
 ansible-playbook -i inventory main.yml -b
 ```
-![ELK](/image/1.png?raw=true "How it works")
+
 ### Create your Kibana Index Pattern
    - Next you'll login to your Kibana instance and create a Kibana index pattern.
 
