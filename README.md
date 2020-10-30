@@ -90,7 +90,7 @@ ansible_system_user: centos
 ```
 ansible-playbook -i inventory main.yml -b
 ```
-
+![ELK](/image/1.png?raw=true "How it works")
 ### Create your Kibana Index Pattern
    - Next you'll login to your Kibana instance and create a Kibana index pattern.
 
