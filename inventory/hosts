@@ -1,0 +1,5 @@
+[localhost]
+
+
+[remote]
+18.220.44.63  ansible_user=centos
