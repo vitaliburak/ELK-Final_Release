@@ -27,12 +27,10 @@ Ansible Playbook for setting up the ELK/EFK Stack and Filebeat client on remote 
 ## What does it do?
    - Automated deployment of a full 6.x series ELK or EFK stack (Elasticsearch, Logstash, Kibana)
      * `5.6` and `2.4` ELK versions are maintained as branches and `master` branch will be 6.x currently.
-     * Uses Nginx as a reverse proxy for Kibana, or optionally Apache via `apache_reverse_proxy: true`
-     * Generates SSL certificates for Filebeat or Logstash-forwarder
-     * Deploys ELK clients using SSL and Filebeat for Logstash (Default)
-     * All service ports can be modified in ```elk_stack_ready/main.yml```
-     * This is also available on [Ansible Galaxy](https://galaxy.ansible.com/sadsfae/ansible-elk/)
-
+     * Uses Nginx as a reverse proxy for Kibana.
+     * Installs SSL certificate on the server VM. 
+     * Installs FileBeat agent on remote VMs to collect logs and push them to the main server.
+     
 ## Requirements
    - RHEL7 or CentOS7 server/client with no modifications and t2.medium size
    - RHEL7/CentOS7 or Fedora for ELK clients using Filebeat
